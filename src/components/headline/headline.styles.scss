@@ -1,0 +1,17 @@
+.headline {
+  font-size: 5rem;
+  color: $col__white;
+  line-height: 0.8;
+  font-weight: 600;
+  margin-top: 10rem;
+
+  @media only screen and (max-width: $bp__xs) {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  &__accent {
+    color: $col__primary;
+    font-weight: 300;
+  }
+}

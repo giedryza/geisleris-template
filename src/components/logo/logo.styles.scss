@@ -1,0 +1,9 @@
+.logo {
+  font-size: 1.4rem;
+  color: $col__white;
+  font-weight: 400;
+
+  @media only screen and (max-width: $bp__xs) {
+    text-align: center;
+  }
+}

@@ -1,0 +1,64 @@
+.slider {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid $col__primary;
+
+  @media only screen and (max-width: $bp__xs) {
+    flex-direction: column;
+    border-bottom: none;
+  }
+
+  &__left {
+    flex: 1;
+    position: relative;
+  }
+
+  &__counter {
+    padding: 1rem;
+    letter-spacing: 5px;
+    font-weight: 600;
+    color: $col__white;
+    text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.8);
+    line-height: 3rem;
+    vertical-align: middle;
+    font-feature-settings: 'tnum';
+    font-variant-numeric: tabular-nums;
+  }
+
+  &__line {
+    position: absolute;
+    width: 20%;
+    height: 3px;
+    background: $col__primary;
+    bottom: 0;
+    transition: 0.2s transform;
+
+    @media only screen and (max-width: $bp__xs) {
+      display: none;
+    }
+  }
+
+  &__right {
+    display: flex;
+    width: 10rem;
+    background: $col__primary;
+    border-top-right-radius: 2rem;
+
+    @media only screen and (max-width: $bp__xs) {
+      border-radius: 2rem;
+    }
+  }
+
+  &__chevron {
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    > svg {
+      padding: 1.5rem;
+      display: block;
+    }
+  }
+}
